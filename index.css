@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FDF5E6; /* Light Peach */
+    line-height: 1.5;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFA500; /* Orange */
+    position: relative;
+    top: 0;
+    width: 100%;
+    font-weight: 900;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: rgb(197, 179, 179);
+}
+
+.active {
+    background-color: #04aa6d;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #FDF5E6; /* Light Peach */
+}
+
+.dish {
+    margin: 30px 15px;
+    background: #FF6347; /* Tomato */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dish-60 {
+    width: calc(60% - 30px);
+}
+
+.dish-40 {
+    width: calc(40% - 30px);  
+    background-image: url("https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .dish-40, .dish-60 {
+        width: 100%;
+    }
+}
+
+.dish ul {
+    list-style-type: none;
+}
+
+.button {
+    background-color: #04aa6d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+

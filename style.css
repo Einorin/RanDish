@@ -1,0 +1,51 @@
+*{
+    line-height: 2;
+}
+
+
+
+body{
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image{
+    width: 60%;
+}
+
+.list{
+    list-style: square;
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/questionnaire-icon/unchecked-10.png) ;
+    background-position: center;
+    background-size: cover;
+    top: 15px;
+    left: 8px;
+}
+/* commented this out for now because we wont use JS yet.
+/* ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(https://icons.veryicon.com/png/o/miscellaneous/wens/checked-3.png);
+} */
+
+
